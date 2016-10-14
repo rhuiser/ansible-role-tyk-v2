@@ -1,8 +1,8 @@
 galaxy_info:
-  author: Sunday Ayandokun
-  description:
-  company: your company (optional)
-
+  author: Robin Huiser
+  description: Tyk API gateway for project Digital API
+  company: Robin Daniel - Consultants
+  
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
   # issue_tracker_url: http://example.com/issue/tracker
