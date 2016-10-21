@@ -67,5 +67,8 @@
 - name: Start Gateway
   service: name=tyk-gateway state=started enabled=yes
 
-- name: Bootstrap up test user
-  shell: /opt/tyk-dashboard/install/bootstrap.sh {{ tyk_dashboard_domain }}
+- name: Deploy GW init script
+  template: src=init-tyk-gw.sh dest=/opt/tyk-dashboard/install/init-tyk-gw.sh mode=0755
+
+- name: Bootstrap API gateway and initial user
+  shell: /opt/tyk-dashboard/install/init-tyk-gw.sh {{ tyk_dashboard_domain }}

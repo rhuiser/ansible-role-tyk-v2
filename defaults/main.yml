@@ -17,3 +17,4 @@ mongodb_url: "mongodb://127.0.0.1/tyk_analytics"
 
 # Get one from https://tyk.io/tyk-professional-licenses/
 license_key: ""
+
